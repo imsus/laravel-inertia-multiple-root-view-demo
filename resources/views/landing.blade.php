@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>app.blade.php</title>
+		<title>landing.blade.php</title>
 		@vite
 	</head>
 	<body class="antialiased">
