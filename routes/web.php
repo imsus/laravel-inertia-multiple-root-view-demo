@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    inertia()->setRootView('landing');
-
-    return inertia('welcome');
-});
+Route::middleware('landing.root')
+    ->get('/', function () {
+        return inertia('welcome');
+    });
 
 Route::get('/admin', function () {
     inertia()->setRootView('app');
